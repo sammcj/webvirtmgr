@@ -41,6 +41,17 @@ Installation (Only web panel)
 
 `Install WebVirtMgr <https://github.com/retspen/webvirtmgr/wiki/Install-WebVirtMgr>`_
 
+Quick start with Docker:
+
+## Initial Setup
+``docker run -v /opt/webvirtmgr:/data: retspen/webvirtmgr deploy``
+
+## Create a superuser
+``docker run -i -v /opt/webvirtmgr:/data: retspen/webvirtmgr add_superuser``
+
+## Run the application
+``docker run -p 8000:8000 -v /opt/webvirtmgr:/data: retspen/webvirtmgr serve``
+
 
 Setup host server (Server for VM's)
 -----------------------------------
